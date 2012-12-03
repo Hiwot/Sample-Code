@@ -1,13 +1,41 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
+#include <iostream>
+#include<conio.h>
+#include <math.h>
+using namespace std;
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
+int prime(long num)  // a function to check for a prime number
+{
+  if(num == 2) // return true if the nunber is 2, since 2 is a prime number
+	   return true;
+	if(num%2 == 0 || num == 1) // return false if the number is 1 or if number % 2 is zero
+	   return false;
+	double sqrt_num =  sqrt(num)+1;
+	for(int i=3; i<sqrt_num; i++)// loop through square root +1 of the number to check if it divizible by other number than itself
+		{
+			if(num%i==0) return false;
+		}	
+	return true;
+}
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+int main ()
+{
+	long a=1;
+	long temp =0;
+	int count = 0;
+	while(count<= 10001)
+	{
+			if(prime(a)){// call the function prime
+				count++;
+				temp = a;
+			}
+			a++;
+   }
+	cout<<"10001st prime number: " << temp;
+	getch();
+    return 0;
+}
+
+
+	
+	
+
