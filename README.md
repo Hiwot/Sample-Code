@@ -1,4 +1,6 @@
 Sample-Code
 ===========
 
-A sample code in C++ to show that I am familiar with programming language. 
+A sample code in C++ to show that I am familiar with programming language. The question is, By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+
+What is the 10 001st prime number?
